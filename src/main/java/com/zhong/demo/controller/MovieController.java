@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.zhong.demo.Movie;
+import com.zhong.demo.MovieService;
 
 @RestController
 @RequestMapping("/api/v1/movies")

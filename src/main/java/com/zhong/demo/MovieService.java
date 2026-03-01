@@ -1,12 +1,9 @@
-package com.zhong.demo.controller;
+package com.zhong.demo;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.zhong.demo.Movie;
-
 
 @Service
 public class MovieService {
@@ -14,6 +11,7 @@ public class MovieService {
   private MovieRepository movieRepository;
 
   public List<Movie> allMovies() {
-    return movieRepository.findAll();
+    List<Movie> movies = movieRepository.findAll();
+    return movies;
   }
 }
