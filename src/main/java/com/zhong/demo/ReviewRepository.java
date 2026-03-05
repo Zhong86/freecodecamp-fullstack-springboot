@@ -1,11 +1,8 @@
 package com.zhong.demo;
 
-import java.util.Optional;
-
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface MovieRepository extends MongoRepository<Movie, String>{
-  Optional<Movie> findMovieByImdbId(String imdbId);
+public interface ReviewRepository extends MongoRepository<Review, String>{
 }
